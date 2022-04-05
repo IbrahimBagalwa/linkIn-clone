@@ -13,3 +13,8 @@
   font-size: 12px;
   font-weight: 400;
 }
+.headerOption_icon {
+  object-fit: contain;
+  height: 25px;
+  width: 24px;
+}
