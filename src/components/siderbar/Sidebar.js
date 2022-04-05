@@ -1,11 +1,12 @@
 import { Avatar } from '@mui/material'
 import React from 'react'
+import FamilyRestroomIcon from '@mui/icons-material/FamilyRestroom'
 import './Sidebar.css'
 function Sidebar() {
   const recentItem = (topic) => {
     return (
       <div className='sidebar_recent__item'>
-        <span className='sidebar_hash'>#</span>
+        <span className='sidebar_hash'>#{/* <FamilyRestroomIcon /> */}</span>
         <p>{topic}</p>
       </div>
     )
