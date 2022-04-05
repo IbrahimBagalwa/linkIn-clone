@@ -1,6 +1,6 @@
 import React from 'react'
-
-function HeaderOptions({ Icon, title }) {
+import './HeaderOption.css'
+function HeaderOptions({ avatar, Icon, title }) {
   return (
     <div className='headerOption'>
       {Icon && <Icon className='headerOption_icon' />}
