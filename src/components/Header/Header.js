@@ -3,9 +3,11 @@ import SearchIcon from '@mui/icons-material/Search'
 function Header() {
   return (
     <div className='header'>
-      <h1>This is the header</h1>
       <div className='header_left'>
-        <img src='' alt='' />
+        <img
+          src='https://cdn-icons.flaticon.com/png/512/3536/premium/3536505.png?token=exp=1649154525~hmac=d01b946853689d0c52a1588ad9da8c39'
+          alt=''
+        />
         <div className='header_search'>
           <SearchIcon />
           <input type='text' />
