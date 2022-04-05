@@ -6,6 +6,7 @@ import ImageIcon from '@mui/icons-material/Image'
 import SubscriptionsIcon from '@mui/icons-material/Subscriptions'
 import EventNoteIcon from '@mui/icons-material/EventNote'
 import CalendarViewDayIcon from '@mui/icons-material/CalendarViewDay'
+import Posts from './Posts'
 function Feed() {
   return (
     <div className='feed'>
@@ -32,6 +33,11 @@ function Feed() {
           />
         </div>
       </div>
+      <Posts
+        name='Ibrahim Bagalwa'
+        description='This is a test'
+        message='Woah this worked'
+      />
     </div>
   )
 }
