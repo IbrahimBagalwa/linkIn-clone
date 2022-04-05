@@ -6,7 +6,9 @@ function Sidebar() {
   const recentItem = (topic) => {
     return (
       <div className='sidebar_recent__item'>
-        <span className='sidebar_hash'>#{/* <FamilyRestroomIcon /> */}</span>
+        <span className='sidebar_hash'>
+          <FamilyRestroomIcon />
+        </span>
         <p>{topic}</p>
       </div>
     )

@@ -86,8 +86,8 @@
   padding-bottom: 10px;
 }
 .sidebar_hash {
-  /* display: flex;
-  align-items: center; */
+  display: flex;
+  align-items: center;
   margin-left: 5px;
   margin-right: 10px;
 }
