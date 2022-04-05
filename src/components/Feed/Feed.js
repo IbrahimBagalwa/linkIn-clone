@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './Feed.css'
 import CreateIcon from '@mui/icons-material/Create'
 import InputOptions from './InputOptions'
@@ -8,6 +8,7 @@ import EventNoteIcon from '@mui/icons-material/EventNote'
 import CalendarViewDayIcon from '@mui/icons-material/CalendarViewDay'
 import Posts from './Posts'
 function Feed() {
+  const [post, setPost] = useState('')
   return (
     <div className='feed'>
       <div className='feed_inout__container'>
