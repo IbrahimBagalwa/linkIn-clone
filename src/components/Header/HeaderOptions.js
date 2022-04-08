@@ -10,7 +10,7 @@ function HeaderOptions({ avatar, Icon, title, onClick }) {
       {Icon && <Icon className='headerOption_icon' />}
       {avatar && (
         <Avatar className='headerOption_icon' src={user?.photoUrl}>
-          {user.email[0].toUpperCase}
+          {user?.email[0].toUpperCase}
         </Avatar>
       )}
       <h4 className='headerOption_title'>{title}</h4>
