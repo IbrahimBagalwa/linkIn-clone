@@ -4,6 +4,7 @@ import './App.css'
 import Feed from './components/Feed/Feed'
 import Header from './components/Header/Header'
 import Sidebar from './components/siderbar/Sidebar'
+import Widgets from './components/widgets/Widgets'
 import { login, logout, selectUser } from './features/userSlice'
 import { auth } from './Firebase'
 import Login from './page/Login/Login'
@@ -39,7 +40,7 @@ function App() {
         <div className='app_body'>
           <Sidebar />
           <Feed />
-          {/* widgets */}
+          <Widgets />
         </div>
       )}
     </div>
