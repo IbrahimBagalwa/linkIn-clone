@@ -37,7 +37,7 @@ function Login() {
               )
             })
         })
-        .catch((err) => console.log(err.message))
+        .catch((err) => alert(err.message))
     } else {
       console.log('false')
     }
