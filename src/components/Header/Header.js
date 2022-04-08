@@ -7,11 +7,10 @@ import ChatIcon from '@mui/icons-material/Chat'
 import NotificationsIcon from '@mui/icons-material/Notifications'
 import './Header.css'
 import HeaderOptions from './HeaderOptions'
-import { useDispatch, useSelector } from 'react-redux'
-import { logout, selectUser } from '../../features/userSlice'
+import { useDispatch } from 'react-redux'
+import { logout } from '../../features/userSlice'
 import { auth } from '../../Firebase'
 function Header() {
-  const user = useSelector(selectUser)
   const dispatch = useDispatch()
   const logoutOfAp = () => {
     dispatch(logout())
@@ -35,11 +34,7 @@ function Header() {
         <HeaderOptions Icon={BusinessCenterIcon} title='Job' />
         <HeaderOptions Icon={ChatIcon} title='Messaging' />
         <HeaderOptions Icon={NotificationsIcon} title='Notifications' />
-        <HeaderOptions
-          avatar={user.photoUrl || user.displayName[0]}
-          title='Me'
-          onClick={logoutOfAp}
-        />
+        <HeaderOptions title='Me' avatar={true} onClick={logoutOfAp} />
       </div>
     </div>
   )
