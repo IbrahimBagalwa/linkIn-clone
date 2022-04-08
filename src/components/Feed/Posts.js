@@ -9,7 +9,7 @@ function Posts({ name, description, message, photoUrl }) {
   return (
     <div className='posts'>
       <div className='post_header'>
-        <Avatar src={photoUrl} />
+        <Avatar src={photoUrl}>{name[0].toUpperCase()}</Avatar>
         <div className='post_info'>
           <h2>{name}</h2>
           <p>{description}</p>
