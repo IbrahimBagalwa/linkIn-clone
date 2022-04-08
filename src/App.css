@@ -2,12 +2,12 @@
   background-color: #f3f2ef;
   display: flex;
   flex-direction: column;
-  /* align-items: center; */
+  align-items: center;
 }
 .app_body {
   display: flex;
   margin-top: flex;
-  max-width: 1200px;
+  max-width: 1600px;
   margin-left: 20px;
   margin-right: 20px;
 }
