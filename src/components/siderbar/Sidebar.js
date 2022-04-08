@@ -2,7 +2,11 @@ import { Avatar } from '@mui/material'
 import React from 'react'
 import FamilyRestroomIcon from '@mui/icons-material/FamilyRestroom'
 import './Sidebar.css'
+import { useSelector } from 'react-redux'
+import { selectUser } from '../../features/userSlice'
 function Sidebar() {
+  const user = useSelector(selectUser)
+  console.log(user)
   const recentItem = (topic) => {
     return (
       <div className='sidebar_recent__item'>
@@ -21,9 +25,11 @@ function Sidebar() {
           src='https://images.pexels.com/photos/133633/pexels-photo-133633.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260'
           alt='cover_img'
         />
-        <Avatar className='sidebar_avatar' />
-        <h2>Ibrahim Bagalwa</h2>
-        <h4>software Engineer</h4>
+        <Avatar src={user.photoUrl} className='sidebar_avatar'>
+          {user.photoUrl || user.displayName[0].toUpperCase()}
+        </Avatar>
+        <h2>{user.displayName}</h2>
+        <h4>{user.email}</h4>
       </div>
 
       <div className='sidebar_stats'>
