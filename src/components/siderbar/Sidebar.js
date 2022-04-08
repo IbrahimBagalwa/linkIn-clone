@@ -6,7 +6,7 @@ import { useSelector } from 'react-redux'
 import { selectUser } from '../../features/userSlice'
 function Sidebar() {
   const user = useSelector(selectUser)
-  console.log(user)
+  // console.log(user)
   const recentItem = (topic) => {
     return (
       <div className='sidebar_recent__item'>
