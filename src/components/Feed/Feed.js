@@ -9,7 +9,10 @@ import CalendarViewDayIcon from '@mui/icons-material/CalendarViewDay'
 import Posts from './Posts'
 import { db } from '../../Firebase'
 import firebase from 'firebase/compat/app'
+import { useSelector } from 'react-redux'
+import { selectUser } from '../../features/userSlice'
 function Feed() {
+  const user = useSelector(selectUser)
   const [msg, setMsg] = useState('')
   const [post, setPost] = useState([])
   useEffect(() => {
@@ -27,10 +30,10 @@ function Feed() {
   const handleSendPost = (e) => {
     e.preventDefault()
     db.collection('posts').add({
-      name: 'Ibrahim Bagalwa',
-      description: 'this is a test',
+      name: user.displayName,
+      description: 'This is a test description',
       message: msg,
-      photoUrl: '',
+      photoUrl: user.photoUrl,
       timestamp: firebase.firestore.FieldValue.serverTimestamp(),
     })
     setMsg('')
