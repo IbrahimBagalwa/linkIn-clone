@@ -26,7 +26,7 @@ function Sidebar() {
           alt='cover_img'
         />
         <Avatar src={user.photoUrl} className='sidebar_avatar'>
-          {user.photoUrl || user.displayName[0].toUpperCase()}
+          {user.email[0].toUpperCase()}
         </Avatar>
         <h2>{user.displayName}</h2>
         <h4>{user.email}</h4>
