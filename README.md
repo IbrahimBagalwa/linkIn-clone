@@ -34,7 +34,7 @@ post your comments to be able to help us thank you
 
 ## Author
 
-- Ibrahim Bagalwa - [@ibrahim_Bagalwa](https://twitter.com/ibrahim_Bagalwa))
+- Ibrahim Bagalwa - [@ibrahim_Bagalwa](https://twitter.com/ibrahim_Bagalwa)
 - LinkedIn - [ibrahim-bagalwa](https://www.linkedin.com/in/IbrahimBagalwa)
 ## Contact Us
 
