@@ -22,7 +22,7 @@ post your comments to be able to help us thank you
 
 ### Links
 
-- Live Site Demo URL: [Space Tourism](link firebase:  https://linkedin-clone-6222c.web.app)
+- Live Site Demo URL: [LinkedIn Clone](https://linkedin-clone-6222c.web.app)
 
 
 
